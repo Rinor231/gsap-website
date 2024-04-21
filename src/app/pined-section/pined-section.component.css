@@ -1,0 +1,33 @@
+.pined {
+  overflow: hidden;
+  background-color: var(--black);
+
+  .pined-inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .pined-list {
+    position: absolute;
+    left: 0;
+    display: flex;
+    gap: 60px;
+
+    li {
+      width: 600px;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+

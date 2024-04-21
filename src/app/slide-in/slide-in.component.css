@@ -1,28 +1,26 @@
-:root {
-  --main: #ff5500;
-  --secondary: #fde49c;
-  --primary: #333;
-  --accent: #ffb740;
-  --white: #fff;
-  --black: #333;
-}
+  .scroll {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 1px;
+    height: 20vh;
+    overflow: hidden;
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  letter-spacing: 0.2em;
-  background: var(--main);
-  font-size: 16px;
-  line-height: 1.7;
-}
-
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1px;
+      height: 4vh;
+      background: #fff;
+      animation: scroll 1.5s linear infinite;
+      z-index: 1;
+    }
+  }
 
 @keyframes scroll {
   0% {
